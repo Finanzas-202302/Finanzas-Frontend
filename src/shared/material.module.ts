@@ -12,6 +12,7 @@ import { MatChipsModule } from "@angular/material/chips";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 import { MatToolbarModule } from "@angular/material/toolbar";
+import {NgIf} from '@angular/common';
 
 @NgModule({
   declarations: [],
@@ -31,6 +32,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatToolbarModule,
     ReactiveFormsModule,
     FormsModule,
+    NgIf,
   ],
   exports: [
     MatButtonModule,
@@ -48,6 +50,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatToolbarModule,
     ReactiveFormsModule,
     FormsModule,
+    NgIf,
   ],
 })
 export class MaterialModule {}

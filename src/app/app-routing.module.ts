@@ -8,21 +8,23 @@ import { LoginComponent } from './components/login/login.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
+import { HeaderToolbarComponent } from './components/header-toolbar/header-toolbar.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent},
-  { path: 'login', component: LoginComponent},
-  { path: 'register', component: RegisterComponent},
-  { path: 'results', component: ResultsComponent},
-  { path: 'calculate', component: CalculateviewComponent},
-  { path: 'clients', component: ClientsComponent},
-  { path: 'profile', component: ProfileComponent},
-  { path: '**', component: NotfoundComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'results', component: ResultsComponent },
+  { path: 'calculate', component: CalculateviewComponent },
+  { path: 'clients', component: ClientsComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'header', component: HeaderToolbarComponent },
+  { path: '**', component: NotfoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,0 +1,78 @@
+.sidenav-container {
+  width: 265px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #fafafa;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.sidebar {
+  background-color: #fafafa;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+
+.branding {
+  padding: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-family: Urbanist;
+  font-weight: 700;
+  color: #ff470d;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-family: Urbanist;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+
+.option {
+}
+
+.sidebar-icon {
+  font-size: 24px;
+  margin-right: 8px;
+  color: gray;
+}
+
+span {
+  font-size: 15px;
+  font-family: Urbanist;
+  font-weight: 300;
+  line-height: 18px;
+  word-wrap: break-word;
+  align-items: center;
+  color: gray;
+  margin-bottom: 400px;
+}
+
+.option:hover {
+  background-color: #fae5e1;
+  font-weight: 500;
+  color: #ff470d;
+  border-radius: 10px;
+  transition: background-color 0.3s; /* Añadimos una animación de transición */
+}
+.option:hover .sidebar-icon {
+  color: #ff470d;
+  transition: color 0.3s;
+}
+.option:hover span {
+  color: #ff470d;
+  transition: color 0.3s;
+}
+#logout {
+  position: absolute;
+  bottom: 20px;
+}

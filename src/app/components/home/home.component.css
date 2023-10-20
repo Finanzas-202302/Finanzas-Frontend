@@ -1,7 +1,29 @@
-.example-spacer {
-    flex: 1 1 auto;
+body {
+  margin: 0;
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
 }
-mat-toolbar{
-    background-color: #3C6FDF;
-    color: white;
+
+.container {
+  display: grid;
+  grid-template-columns: 265px 1fr;
+  grid-template-rows: 94px 1fr;
+  height: 100vh;
 }
+
+.sidebar {
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Agrega estilos adicionales según tus preferencias */

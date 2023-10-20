@@ -1,9 +1,73 @@
-.example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .example-full-width {
-    width: 100%;
-  }
+.login-container {
+  background-color: rgb(255, 230, 209);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text {
+  color: #d0d0d0;
+  font-size: 15px;
+  margin-right: 282px;
+}
+
+.login-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 133px;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  background-color: rgb(253, 244, 236);
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  color: #d0d0d0;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.login-button {
+  background-color: #ff6348;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.signup-text {
+  margin-top: 20px;
+}
+
+.signup-link {
+  color: #ff6c53;
+  text-decoration: none;
+  font-weight: bold;
+}

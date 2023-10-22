@@ -1,0 +1,87 @@
+#header-toolbar {
+  width: 85%;
+  height: 100px;
+  max-width: 1350px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: #fafafa;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #header-toolbar {
+    width: 90%; /* Cambia el ancho del contenedor en pantallas pequeñas */
+    height: 80px;
+    font-size: smaller;
+  }
+}
+
+.header-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.header-title,
+.header-description {
+  color: #4d4d4d;
+  font-family: Urbanist;
+  word-wrap: break-word;
+}
+
+.header-title {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.header-description {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-message,
+.icon-notification,
+.icon-circle {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  color: gray;
+}
+
+.icon-message,
+.icon-notification,
+.icon-circle {
+  font-size: 30px; /* Tamaño de fuente personalizado */
+  margin-left: 10px;
+}
+
+.user-info {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.user-name {
+  font-size: 1em;
+  font-family: Urbanist;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.user-role {
+  font-size: 1em;
+  font-family: Urbanist;
+  color: gray;
+  font-weight: 400;
+  word-wrap: break-word;
+}

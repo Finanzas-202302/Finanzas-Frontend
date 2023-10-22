@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  register(){
-    // lógica de autenticación
-  }
-  
-
+  register(){}
 }

@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" opened class="sidebar">
+    <div class="branding">
+      <div class="title">SmartDrive</div>
+      <div class="subtitle">Finance Group</div>
+    </div>
+    <mat-nav-list>
+      <mat-list-item class="option" (click)="selectOption('R')">
+        <mat-icon class="sidebar-icon">insert_chart</mat-icon>
+        <span>Resumen</span>
+      </mat-list-item>
+      <mat-list-item class="option" (click)="selectOption('C')">
+        <mat-icon class="sidebar-icon">calculate</mat-icon>
+        <span>Calcular crédito</span>
+      </mat-list-item>
+      <mat-list-item class="option" (click)="selectOption('U')">
+        <mat-icon class="sidebar-icon">person</mat-icon>
+        <span>Mis clientes</span>
+      </mat-list-item>
+      <mat-list-item class="option" (click)="selectOption('S')">
+        <mat-icon class="sidebar-icon">settings</mat-icon>
+        <span>Ajustes</span>
+      </mat-list-item>
+      <mat-list-item class="option" id="logout">
+        <mat-icon class="sidebar-icon">logout</mat-icon>
+        <span>Cerrar sesión</span>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>

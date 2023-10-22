@@ -1,0 +1,30 @@
+<section id="header-toolbar" *ngIf="showHeader">
+  <div class="header-info">
+    <div class="header-title">{{ selectedOption }}</div>
+    <div class="header-description">{{ description }}</div>
+  </div>
+  <div class="header-icons">
+    <mat-icon class="icon-message">mail</mat-icon>
+    <mat-icon class="icon-notification">notifications</mat-icon>
+    <mat-icon class="icon-circle">account_circle</mat-icon>
+    <div class="user-info">
+      <div class="user-name">Sofia</div>
+      <div class="user-role">Admin account</div>
+    </div>
+  </div>
+</section>
+
+<!--
+    <section id="content">
+      <div
+        style="
+          width: 1129px;
+          height: 837px;
+          left: 289px;
+          top: 162px;
+          position: absolute;
+          background: #fafafa;
+          border-radius: 20px;
+        "
+      ></div>
+    </section>-->

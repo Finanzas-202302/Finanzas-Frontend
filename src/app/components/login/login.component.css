@@ -32,8 +32,9 @@
 }
 
 label {
-  display: block;
+  display: flex;
   margin-bottom: 5px;
+  margin-left: 20px;
 }
 
 input {

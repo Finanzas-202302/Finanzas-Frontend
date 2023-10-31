@@ -14,7 +14,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { ResultsComponent } from './components/results/results.component';
-import { CalculateviewComponent } from './components/calculateview/calculateview.component';
+import { CalculateViewComponent } from './components/calculateview/calculateview.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
@@ -28,7 +28,7 @@ import { HeaderToolbarComponent } from './components/header-toolbar/header-toolb
     RegisterComponent,
     HomeComponent,
     ResultsComponent,
-    CalculateviewComponent,
+    CalculateViewComponent,
     ClientsComponent,
     ProfileComponent,
     NotfoundComponent,

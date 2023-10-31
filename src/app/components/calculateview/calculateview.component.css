@@ -1,0 +1,91 @@
+.calculate_1 {
+  font-family: Urbanist;
+}
+
+.container {
+  width: 85%;
+  height: 85%;
+  position: relative;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  grid-template-areas:
+    "title divider right-section"
+    "left-section divider right-section";
+  grid-template-rows: auto 1fr; /* Added row for the title */
+  border: 2px solid #ff470d;
+  border-radius: 5px;
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header {
+  color: #4d4d4d;
+  font-size: 16px;
+  font-family: Urbanist;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.left-section {
+  grid-area: left-section;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.right-section {
+  grid-area: right-section;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.divider {
+  grid-area: divider;
+  margin-top: 15px;
+  width: 2px;
+  height: 95%;
+  background: #ff470d;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.next-button {
+  width: 100%;
+  max-width: 325px;
+  height: 49px;
+  background: #ff470d !important;
+  color: #ffffff !important;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(50, 10, 10, 0.06);
+  font-size: 20px;
+  font-family: Urbanist;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-group-input {
+  width: 100%;
+  max-width: 325px;
+  height: 49px;
+  background: white;
+  border-radius: 10px;
+  border: 2px #ff470d solid;
+  padding-left: 15px;
+  font-size: 20px;
+  font-family: Urbanist;
+}

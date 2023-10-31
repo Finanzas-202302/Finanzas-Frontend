@@ -1,1 +1,79 @@
-<p>calculateview works!</p>
+<div class="calculate_1">
+  <mat-card-title class="header">Paso 1/3</mat-card-title>
+  <mat-card class="container">
+    <div class="title"></div>
+    <div class="left-section">
+      <mat-label>Busque a su cliente:</mat-label>
+      <mat-form-field class="form-group">
+        <input matInput [(ngModel)]="searchClient" class="form-group-input" />
+      </mat-form-field>
+
+      <mat-label>Elija una moneda:</mat-label>
+      <div class="form-group">
+        <mat-radio-group [(ngModel)]="selectedCurrency">
+          <mat-radio-button value="soles">Soles</mat-radio-button>
+          <mat-radio-button value="dollars">Dólares</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <mat-label>Ingrese el valor del vehículo:</mat-label>
+      <mat-form-field class="form-group">
+        <input matInput [(ngModel)]="vehicleValue" class="form-group-input" />
+      </mat-form-field>
+
+      <mat-label>Elija el pie mínimo inicial:</mat-label>
+      <div class="form-group">
+        <mat-radio-group [(ngModel)]="selectedInitialPie">
+          <mat-radio-button value="20">20%</mat-radio-button>
+          <mat-radio-button value="30">30%</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <mat-label>Elija el porcentaje del crédito:</mat-label>
+      <div class="form-group">
+        <mat-radio-group [(ngModel)]="selectedCredit">
+          <mat-radio-button value="20">20%</mat-radio-button>
+          <mat-radio-button value="30">30%</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="right-section">
+      <mat-label>Elige el porcentaje de VFMG</mat-label>
+      <div class="form-group">
+        <mat-radio-group [(ngModel)]="selectedVFMG">
+          <mat-radio-button value="40">40%</mat-radio-button>
+          <mat-radio-button value="50">50%</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <mat-label>Elige el plazo del préstamo</mat-label>
+      <div class="form-group">
+        <mat-radio-group [(ngModel)]="selectedLoanTerm">
+          <mat-radio-button value="24">24 meses</mat-radio-button>
+          <mat-radio-button value="36">36 meses</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <mat-label>Elige el tipo de tasa de interés</mat-label>
+      <div class="form-group">
+        <mat-radio-group [(ngModel)]="selectedInterestRateType">
+          <mat-radio-button value="nominal">Nominal</mat-radio-button>
+          <mat-radio-button value="effective">Efectiva</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <mat-label>Ingresa la tasa de interés (sin %)</mat-label>
+      <mat-form-field class="form-group">
+        <input matInput [(ngModel)]="interestRate" class="form-group-input" />
+        <mat-label>Si la tasa es 10%, ingrese 10</mat-label>
+      </mat-form-field>
+
+      <button mat-raised-button class="next-button" (click)="nextStep()">
+        Siguiente paso
+      </button>
+    </div>
+  </mat-card>
+</div>

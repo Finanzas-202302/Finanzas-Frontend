@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -21,6 +22,8 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderToolbarComponent } from './components/header-toolbar/header-toolbar.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { Calculateview2Component } from './components/calculateview2/calculateview2.component';
+import { Calculateview3Component } from './components/calculateview3/calculateview3.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,8 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
     SidebarComponent,
     HeaderToolbarComponent,
     LandingPageComponent,
+    Calculateview2Component,
+    Calculateview3Component,
   ],
   imports: [
     BrowserModule,

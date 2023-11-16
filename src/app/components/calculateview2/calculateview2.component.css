@@ -1,4 +1,4 @@
-.calculate_1 {
+.calculate_2 {
   font-family: Urbanist;
 }
 
@@ -34,6 +34,14 @@
   word-wrap: break-word;
 }
 
+.subtitle {
+  font-size: medium;
+  color: #4d4d4d;
+  font-family: Urbanist;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
 .left-section {
   grid-area: left-section;
   display: flex;
@@ -49,6 +57,9 @@
   align-items: flex-start;
   padding: 20px;
 }
+.right-section > * {
+  margin-bottom: 0px;
+}
 
 .divider {
   grid-area: divider;
@@ -63,9 +74,9 @@
 }
 
 .next-button {
-  width: 100%;
+  width: 40%;
   max-width: 325px;
-  height: 49px;
+  height: 40px;
   background: #ff470d !important;
   color: #ffffff !important;
   border-radius: 5px;
@@ -75,7 +86,12 @@
   font-weight: 700;
   line-height: 28px;
   text-align: center;
-  margin-top: 20px;
+}
+.align-button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .form-group-input {

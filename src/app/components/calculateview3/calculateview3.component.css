@@ -1,4 +1,4 @@
-.calculate_1 {
+.calculate_3 {
   font-family: Urbanist;
 }
 
@@ -12,9 +12,24 @@
   grid-template-areas:
     "title divider right-section"
     "left-section divider right-section";
-  grid-template-rows: auto 1fr auto; /* Added row for the title */
+  grid-template-rows: auto 1fr; /* Added row for the title */
   border: 2px solid #ff470d;
   border-radius: 5px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+#sub {
+  font-size: medium;
+  color: #4d4d4d;
+  font-family: Urbanist;
+  font-weight: bold;
+  word-wrap: break-word;
 }
 
 .title {
@@ -62,8 +77,8 @@
   margin-bottom: 30px;
 }
 
-.next-button {
-  width: 100%;
+.a-button {
+  width: 40%;
   max-width: 325px;
   height: 49px;
   background: #ff470d !important;
@@ -75,11 +90,44 @@
   font-weight: 700;
   line-height: 28px;
   text-align: center;
-  margin-top: 20px;
+}
+.c-button {
+  width: 40%;
+  max-width: 325px;
+  height: 49px;
+  background: #ffaa0d !important;
+  color: #ffffff !important;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(50, 10, 10, 0.06);
+  font-size: 20px;
+  font-family: Urbanist;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+
+.a-button:hover {
+  background: #ff470d !important;
+  color: #ffffff !important;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(50, 10, 10, 0.06);
+  font-size: 20px;
+  font-family: Urbanist;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  padding: 20px;
+}
+
+.align-button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .form-group-input {
-  width: 65%;
+  width: 100%;
   max-width: 325px;
   height: 49px;
   background: white;

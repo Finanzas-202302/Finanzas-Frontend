@@ -1,4 +1,6 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
+import { SharedDataService } from '../../../shared/shared-data.service';
 
 @Component({
   selector: 'app-calculate-view',
@@ -15,65 +17,78 @@ export class CalculateViewComponent {
   selectedLoanTerm: number = 0;
   selectedInterestRateType: string = '';
   interestRate: number = 0;
+  constructor(private router: Router, private sharedData: SharedDataService) {
+    this.sharedData.data$.subscribe((data) => {
+      this.searchClient = data.searchClient;
+      this.selectedCurrency = data.selectedCurrency;
+      this.vehicleValue = data.vehicleValue;
+      this.selectedInitialPie = data.selectedInitialPie;
+      this.selectedCredit = data.selectedCredit;
+      this.selectedVFMG = data.selectedVFMG;
+      this.selectedLoanTerm = data.selectedLoanTerm;
+      this.selectedInterestRateType = data.selectedInterestRateType;
+      this.interestRate = data.interestRate;
+    });
+  }
 
-  //Actualize the values upper with the values from the form selected by the user
+  setValues() {
+    this.sharedData.setData({
+      searchClient: this.searchClient,
+      selectedCurrency: this.selectedCurrency,
+      vehicleValue: this.vehicleValue,
+      selectedInitialPie: this.selectedInitialPie,
+      selectedCredit: this.selectedCredit,
+      selectedVFMG: this.selectedVFMG,
+      selectedLoanTerm: this.selectedLoanTerm,
+      selectedInterestRateType: this.selectedInterestRateType,
+      interestRate: this.interestRate,
+    });
+    console.log(this.sharedData.getDataSnapshot());
+  }
+
   onSearchClientChange(value: string) {
     this.searchClient = value;
   }
-
   onCurrencyChange(value: string) {
     this.selectedCurrency = value;
   }
-
   onVehicleValueChange(value: number) {
     this.vehicleValue = value;
   }
-
   onInitialPieChange(value: number) {
     this.selectedInitialPie = value;
   }
-
   onCreditChange(value: number) {
     this.selectedCredit = value;
   }
-
   onVFMGChange(value: number) {
     this.selectedVFMG = value;
   }
-
   onLoanTermChange(value: number) {
     this.selectedLoanTerm = value;
   }
-
   onInterestRateTypeChange(value: string) {
     this.selectedInterestRateType = value;
   }
-
   onInterestRateChange(value: number) {
     this.interestRate = value;
   }
 
+  /*updateSharedData() {
+    this.sharedData = this.searchClient;
+    this.sharedData.data.selectedCurrency = this.selectedCurrency;
+    this.sharedData.data.vehicleValue = this.vehicleValue;
+    this.sharedData.data.selectedInitialPie = this.selectedInitialPie;
+    this.sharedData.data.selectedCredit = this.selectedCredit;
+    this.sharedData.data.selectedVFMG = this.selectedVFMG;
+    this.sharedData.data.selectedLoanTerm = this.selectedLoanTerm;
+    this.sharedData.data.selectedInterestRateType =
+      this.selectedInterestRateType;
+    this.sharedData.data.interestRate = this.interestRate;
+  }*/
+
   nextStep() {
-    //call al onChanges methods to actualize the values
-    this.onSearchClientChange(this.searchClient);
-    this.onCurrencyChange(this.selectedCurrency);
-    this.onVehicleValueChange(this.vehicleValue);
-    this.onInitialPieChange(this.selectedInitialPie);
-    this.onCreditChange(this.selectedCredit);
-    this.onVFMGChange(this.selectedVFMG);
-    this.onLoanTermChange(this.selectedLoanTerm);
-    this.onInterestRateTypeChange(this.selectedInterestRateType);
-    this.onInterestRateChange(this.interestRate);
-    //print the values to the console
-    console.log(this.searchClient);
-    console.log(this.selectedCurrency);
-    console.log(this.vehicleValue);
-    console.log(this.selectedInitialPie);
-    console.log(this.selectedCredit);
-    console.log(this.selectedVFMG);
-    console.log(this.selectedLoanTerm);
-    console.log(this.selectedInterestRateType);
-    console.log(this.interestRate);
-    // Handle next button click event
+    this.setValues();
+    this.router.navigate(['/calculate2']);
   }
 }

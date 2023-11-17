@@ -24,6 +24,7 @@ import { HeaderToolbarComponent } from './components/header-toolbar/header-toolb
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { Calculateview2Component } from './components/calculateview2/calculateview2.component';
 import { Calculateview3Component } from './components/calculateview3/calculateview3.component';
+import { DialogResultsComponent } from './components/dialog-results/dialog-results.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { Calculateview3Component } from './components/calculateview3/calculatevi
     LandingPageComponent,
     Calculateview2Component,
     Calculateview3Component,
+    DialogResultsComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ body {
   background-color: #fafafa;
   border: 2px solid #ff470d;
   border-radius: 5px;
+  overflow: auto; /* Agrega esto para permitir el desplazamiento si es necesario */
 }
 
 table {

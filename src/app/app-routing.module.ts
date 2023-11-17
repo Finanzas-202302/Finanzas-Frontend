@@ -5,6 +5,7 @@ import { CalculateViewComponent } from './components/calculateview/calculateview
 import { Calculateview2Component } from './components/calculateview2/calculateview2.component';
 import { Calculateview3Component } from './components/calculateview3/calculateview3.component';
 import { ClientsComponent } from './components/clients/clients.component';
+import { DialogResultsComponent } from './components/dialog-results/dialog-results.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'calculate2', component: Calculateview2Component },
   { path: 'calculate3', component: Calculateview3Component },
   { path: 'clients', component: ClientsComponent },
+  { path: 'dialog-results', component: DialogResultsComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'header', component: HeaderToolbarComponent },
   { path: '**', component: NotfoundComponent },

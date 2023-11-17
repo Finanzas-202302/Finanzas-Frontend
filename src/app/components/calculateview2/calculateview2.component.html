@@ -7,9 +7,9 @@
       <mat-label>Elija el tipo de periodo de gracia</mat-label>
       <div class="form-group">
         <mat-radio-group [(ngModel)]="periodoGraciaTipo">
-          <mat-radio-button value="parcial">Parcial</mat-radio-button>
-          <mat-radio-button value="total">Total</mat-radio-button>
-          <mat-radio-button value="na">Sin periodo de gracia</mat-radio-button>
+          <mat-radio-button PEN="parcial">Parcial</mat-radio-button>
+          <mat-radio-button PEN="total">Total</mat-radio-button>
+          <mat-radio-button PEN="na">Sin periodo de gracia</mat-radio-button>
         </mat-radio-group>
       </div>
 
@@ -35,8 +35,8 @@
       <mat-label>Elige el tipo de tasa del seguro desgravamen</mat-label>
       <div class="form-group">
         <mat-radio-group [(ngModel)]="seguroDesgravamenTipo">
-          <mat-radio-button value="nominal">Nominal</mat-radio-button>
-          <mat-radio-button value="efectiva">Efectiva</mat-radio-button>
+          <mat-radio-button PEN="nominal">Nominal</mat-radio-button>
+          <mat-radio-button PEN="efectiva">Efectiva</mat-radio-button>
         </mat-radio-group>
       </div>
 

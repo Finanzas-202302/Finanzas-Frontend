@@ -1,1 +1,87 @@
-<p>clients works!</p>
+<mat-card class="container">
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="nombre">
+      <th class="urbanist-font" mat-header-cell *matHeaderCellDef>
+        <strong>Nombre</strong>
+      </th>
+      <td class="urbanist-font" mat-cell *matCellDef="let element">
+        {{ element.nombre }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="apellido">
+      <th class="urbanist-font" mat-header-cell *matHeaderCellDef>
+        <strong>Apellido</strong>
+      </th>
+      <td class="urbanist-font" mat-cell *matCellDef="let element">
+        {{ element.apellido }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="correo">
+      <th class="urbanist-font" mat-header-cell *matHeaderCellDef>
+        <strong>Correo</strong>
+      </th>
+      <td class="urbanist-font" mat-cell *matCellDef="let element">
+        {{ element.correo }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dni">
+      <th class="urbanist-font" mat-header-cell *matHeaderCellDef>
+        <strong>DNI</strong>
+      </th>
+      <td class="urbanist-font" mat-cell *matCellDef="let element">
+        {{ element.dni }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="vehiculo">
+      <th class="urbanist-font" mat-header-cell *matHeaderCellDef>
+        <strong>Vehículo</strong>
+      </th>
+      <td class="urbanist-font" mat-cell *matCellDef="let element">
+        {{ element.vehiculo }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="acciones">
+      <th class="urbanist-font" mat-header-cell *matHeaderCellDef>
+        <strong>Acciones</strong>
+      </th>
+      <td class="urbanist-font" mat-cell *matCellDef="let element">
+        <div class="align-button">
+          <button
+            mat-raised-button
+            class="a-button"
+            (click)="verRegistro(element)"
+          >
+            Ver
+          </button>
+          <button
+            mat-raised-button
+            class="a-button"
+            (click)="editarRegistro(element)"
+          >
+            Editar
+          </button>
+          <button
+            mat-raised-button
+            class="c-button"
+            (click)="eliminarRegistro(element)"
+          >
+            Borrar
+          </button>
+        </div>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  <mat-paginator
+    class="urbanist-font"
+    [pageSizeOptions]="[5, 10, 25, 100]"
+    showFirstLastButtons
+  ></mat-paginator>
+</mat-card>

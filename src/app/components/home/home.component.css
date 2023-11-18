@@ -1,29 +1,9 @@
-body {
-  margin: 0;
-  background-color: #fafafa;
-  font-family: Arial, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;700&family=Urbanist:wght@300;700&display=swap');
 
-.container {
-  display: grid;
-  grid-template-columns: 265px 1fr;
-  grid-template-rows: 94px 1fr;
-  height: 100vh;
+*{
+  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Urbanist', sans-serif;
 }
-
-.sidebar {
-  border-right: 1px solid #ccc;
-  padding: 10px;
+mat-grid-tile {
+  background: rgb(225, 198, 166);
 }
-
-.content {
-  display: flex;
-  flex-direction: column;
-}
-
-.content-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Agrega estilos adicionales según tus preferencias */

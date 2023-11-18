@@ -1,40 +1,55 @@
+header {
+  background-color: #FAFAFA; /* Color blanco para el fondo del header */
+  padding: 10px; /* Espaciado interno */
+  display: flex; /* Utilizamos flexbox para alinear elementos */
+  align-items: center; /* Centramos verticalmente los elementos */
+  height: 66px;
+}
+
+header img {
+  margin-left: 10px; /* Espaciado a la izquierda para el logo */
+}
+
 .register-container {
-    background-color: rgb(255, 230, 209);
+    background-color: #FFF3E5;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 700px;
 }
 
 .register-box{
-    background-color: white;
-    width: 400px;
+    background-color: #FAFAFA;
+    width: 500px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0.2);
-
 }
 
 .welcome-tex{
     color: #d0d0d0;
     font-size: 15px;
-    margin-right: 282px;
+    margin-right: 350px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .register-heading{
     font-size: 32px;
     font-weight: bold;
-    margin-right: 133px;
+    margin-right: 310px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .form-group{
     margin-top: 20px;
 }
-
 label {
-    display: block;
+    display: flex;
+    margin-left:28px;
     margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
   }
 
   input {
@@ -43,6 +58,7 @@ label {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
   }
 .register-button {
     background-color: #ff6348;
@@ -53,14 +69,17 @@ label {
     font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .signup-text {
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .signup-link {
     color: #ff6c53;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
   }

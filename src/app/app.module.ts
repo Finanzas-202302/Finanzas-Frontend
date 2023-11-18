@@ -20,6 +20,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderToolbarComponent } from './components/header-toolbar/header-toolbar.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { HeaderToolbarComponent } from './components/header-toolbar/header-toolb
     NotfoundComponent,
     SidebarComponent,
     HeaderToolbarComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,

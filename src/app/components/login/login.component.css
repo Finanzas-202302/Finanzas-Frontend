@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Urbanist:wght@700&display=swap');
+
+header {
+  background-color: #FAFAFA; /* Color blanco para el fondo del header */
+  padding: 10px; /* Espaciado interno */
+  display: flex; /* Utilizamos flexbox para alinear elementos */
+  align-items: center; /* Centramos verticalmente los elementos */
+  height: 66px;
+}
+
+header img {
+  margin-left: 10px; /* Espaciado a la izquierda para el logo */
+}
+
 .login-container {
   background-color: rgb(255, 230, 209);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 700px;
 }
 
 .login-box {
@@ -16,15 +30,19 @@
 }
 
 .welcome-text {
-  color: #d0d0d0;
+  color: #9b9797;
   font-size: 15px;
   margin-right: 282px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 .login-heading {
   font-size: 32px;
   font-weight: bold;
-  margin-right: 133px;
+  margin-right: 170px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .form-group {
@@ -35,6 +53,8 @@ label {
   display: flex;
   margin-bottom: 5px;
   margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 input {
@@ -43,10 +63,12 @@ input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 .forgot-password {
-  color: #d0d0d0;
+  color: #9b9797;
   text-decoration: none;
   display: block;
   margin-top: 10px;
@@ -56,19 +78,25 @@ input {
   background-color: #ff6348;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 32px;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  font-family: 'Urbanist', sans-serif;
   margin-top: 20px;
+  display: inline-flex;
 }
 
 .signup-text {
   margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 .signup-link {
   color: #ff6c53;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }

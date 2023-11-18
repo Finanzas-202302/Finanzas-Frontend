@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -35,6 +36,7 @@ import { NgIf } from '@angular/common';
     FormsModule,
     MatRadioModule,
     NgIf,
+    MatDialogModule,
   ],
   exports: [
     MatButtonModule,
@@ -54,6 +56,7 @@ import { NgIf } from '@angular/common';
     FormsModule,
     MatRadioModule,
     NgIf,
+    MatDialogModule,
   ],
 })
 export class MaterialModule {}

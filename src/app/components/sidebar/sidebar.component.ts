@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 import { SharedStateService } from '../../../shared/sidebar-state.service';
-import { MatListModule } from '@angular/material/list';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSidenavModule } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-sidebar',
@@ -15,5 +12,4 @@ export class SidebarComponent {
   selectOption(option: string) {
     this.sharedStateService.setSelectedOption(option);
   }
-  //ngOnInit(): void {}
 }

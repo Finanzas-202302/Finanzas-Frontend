@@ -1,5 +1,42 @@
+body {
+  margin: 0;
+  background-color: #fafafa;
+  font-family: Urbanist, sans-serif;
+}
+
+.container_principal {
+  display: grid;
+  grid-template-columns: 265px 1fr;
+  grid-template-rows: 94px 1fr;
+  height: 100vh;
+}
+
+.sidebar_principal {
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.content_principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-inner_principal {
+  width: 85%;
+  margin: 0 auto;
+}
+.header_first {
+  color: #4d4d4d;
+  font-size: 16px;
+  font-family: Urbanist;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-top: 20px;
+}
+
 .calculate_3 {
   font-family: Urbanist;
+  margin-top: 20px;
 }
 
 .container {
@@ -73,6 +110,10 @@
   background: #ff470d;
 }
 
+.urbanist {
+  font-family: Urbanist;
+}
+
 .form-group {
   margin-bottom: 30px;
 }
@@ -104,19 +145,6 @@
   font-weight: 700;
   line-height: 28px;
   text-align: center;
-}
-
-.a-button:hover {
-  background: #ff470d !important;
-  color: #ffffff !important;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(50, 10, 10, 0.06);
-  font-size: 20px;
-  font-family: Urbanist;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: center;
-  padding: 20px;
 }
 
 .align-button {

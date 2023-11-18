@@ -4,24 +4,24 @@ body {
   font-family: Urbanist, sans-serif;
 }
 
-.container {
+.container_principal {
   display: grid;
   grid-template-columns: 265px 1fr;
   grid-template-rows: 94px 1fr;
   height: 100vh;
 }
 
-.sidebar {
+.sidebar_principal {
   border-right: 1px solid #ccc;
   padding: 10px;
 }
 
-.content {
+.content_principal {
   display: flex;
   flex-direction: column;
 }
 
-.content-inner {
+.content-inner_principal {
   max-width: 1200px;
   margin: 0 auto;
 }

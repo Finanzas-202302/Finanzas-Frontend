@@ -1,110 +1,130 @@
-<div class="calculate_2">
-  <mat-card-title class="header">Paso 2/3</mat-card-title>
-  <mat-card class="container">
-    <div class="title"></div>
+<div class="container_principal">
+  <div class="sidebar_principal">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="content_principal">
+    <app-header-toolbar></app-header-toolbar>
+    <div class="content-inner_principal">
+      <div class="calculate_2">
+        <mat-card-title class="header">Paso 2/3</mat-card-title>
+        <mat-card class="container">
+          <div class="title"></div>
 
-    <div class="left-section">
-      <mat-label>Elija el tipo de periodo de gracia</mat-label>
-      <div class="form-group">
-        <mat-radio-group [(ngModel)]="periodoGraciaTipo">
-          <mat-radio-button PEN="parcial">Parcial</mat-radio-button>
-          <mat-radio-button PEN="total">Total</mat-radio-button>
-          <mat-radio-button PEN="na">Sin periodo de gracia</mat-radio-button>
-        </mat-radio-group>
+          <div class="left-section">
+            <mat-label>Elija el tipo de periodo de gracia</mat-label>
+            <div class="form-group">
+              <mat-radio-group [(ngModel)]="periodoGraciaTipo">
+                <mat-radio-button PEN="parcial">Parcial</mat-radio-button>
+                <mat-radio-button PEN="total">Total</mat-radio-button>
+                <mat-radio-button PEN="na"
+                  >Sin periodo de gracia</mat-radio-button
+                >
+              </mat-radio-group>
+            </div>
+
+            <mat-label>Ingrese el periodo de gracia en meses</mat-label>
+            <mat-form-field class="form-group">
+              <input
+                matInput
+                [(ngModel)]="periodoGraciaMeses"
+                class="form-group-input"
+              />
+            </mat-form-field>
+
+            <mat-label>Ingresa el seguro de desgravamen (sin %)</mat-label>
+            <mat-form-field class="form-group">
+              <input
+                matInput
+                [(ngModel)]="seguroDesgravamen"
+                class="form-group-input"
+              />
+              <mat-label>Si es 10%, ingresar 10</mat-label>
+            </mat-form-field>
+
+            <mat-label>Elige el tipo de tasa del seguro desgravamen</mat-label>
+            <div class="form-group">
+              <mat-radio-group [(ngModel)]="seguroDesgravamenTipo">
+                <mat-radio-button PEN="nominal">Nominal</mat-radio-button>
+                <mat-radio-button PEN="efectiva">Efectiva</mat-radio-button>
+              </mat-radio-group>
+            </div>
+
+            <mat-label>Ingresa el COK mensual (sin %)</mat-label>
+            <mat-form-field class="form-group">
+              <input matInput [(ngModel)]="cok" class="form-group-input" />
+              <mat-label>Si el COK es 10%, ingresar 10</mat-label>
+            </mat-form-field>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="right-section">
+            <mat-label class="subtitle">Costos y gastos iniciales</mat-label>
+            <mat-label>Gastos notariales y registrales</mat-label>
+            <mat-form-field class="form-group">
+              <input
+                matInput
+                [(ngModel)]="gastosNotarialesRegistrales"
+                class="form-group-input"
+              />
+            </mat-form-field>
+
+            <mat-label>Otros costos iniciales (suma de ellos) </mat-label>
+            <mat-form-field class="form-group">
+              <input
+                matInput
+                [(ngModel)]="otrosCostosIniciales"
+                class="form-group-input"
+              />
+            </mat-form-field>
+
+            <mat-label class="subtitle">Costos y gastos periódicos</mat-label>
+            <mat-label>Portes</mat-label>
+            <mat-form-field class="form-group">
+              <input
+                matInput
+                [(ngModel)]="costosGastosPeriodicos"
+                class="form-group-input"
+              />
+            </mat-form-field>
+
+            <mat-label>Gastos de administracion</mat-label>
+            <mat-form-field class="form-group">
+              <input
+                matInput
+                [(ngModel)]="gastosAdministracion"
+                class="form-group-input"
+              />
+            </mat-form-field>
+
+            <mat-label>Otros costos finales</mat-label>
+            <mat-form-field class="form-group">
+              <input
+                matInput
+                [(ngModel)]="otrosCostosFinales"
+                class="form-group-input"
+              />
+            </mat-form-field>
+
+            <div class="align-button">
+              <button
+                mat-raised-button
+                class="next-button"
+                (click)="prevStep()"
+              >
+                Volver
+              </button>
+              <button
+                mat-raised-button
+                class="next-button"
+                (click)="nextStep()"
+              >
+                Siguiente
+              </button>
+            </div>
+          </div>
+        </mat-card>
       </div>
-
-      <mat-label>Ingrese el periodo de gracia en meses</mat-label>
-      <mat-form-field class="form-group">
-        <input
-          matInput
-          [(ngModel)]="periodoGraciaMeses"
-          class="form-group-input"
-        />
-      </mat-form-field>
-
-      <mat-label>Ingresa el seguro de desgravamen (sin %)</mat-label>
-      <mat-form-field class="form-group">
-        <input
-          matInput
-          [(ngModel)]="seguroDesgravamen"
-          class="form-group-input"
-        />
-        <mat-label>Si es 10%, ingresar 10</mat-label>
-      </mat-form-field>
-
-      <mat-label>Elige el tipo de tasa del seguro desgravamen</mat-label>
-      <div class="form-group">
-        <mat-radio-group [(ngModel)]="seguroDesgravamenTipo">
-          <mat-radio-button PEN="nominal">Nominal</mat-radio-button>
-          <mat-radio-button PEN="efectiva">Efectiva</mat-radio-button>
-        </mat-radio-group>
-      </div>
-
-      <mat-label>Ingresa el COK mensual (sin %)</mat-label>
-      <mat-form-field class="form-group">
-        <input matInput [(ngModel)]="cok" class="form-group-input" />
-        <mat-label>Si el COK es 10%, ingresar 10</mat-label>
-      </mat-form-field>
     </div>
-
-    <div class="divider"></div>
-
-    <div class="right-section">
-      <mat-label class="subtitle">Costos y gastos iniciales</mat-label>
-      <mat-label>Gastos notariales y registrales</mat-label>
-      <mat-form-field class="form-group">
-        <input
-          matInput
-          [(ngModel)]="gastosNotarialesRegistrales"
-          class="form-group-input"
-        />
-      </mat-form-field>
-
-      <mat-label>Otros costos iniciales (suma de ellos) </mat-label>
-      <mat-form-field class="form-group">
-        <input
-          matInput
-          [(ngModel)]="otrosCostosIniciales"
-          class="form-group-input"
-        />
-      </mat-form-field>
-
-      <mat-label class="subtitle">Costos y gastos periódicos</mat-label>
-      <mat-label>Portes</mat-label>
-      <mat-form-field class="form-group">
-        <input
-          matInput
-          [(ngModel)]="costosGastosPeriodicos"
-          class="form-group-input"
-        />
-      </mat-form-field>
-
-      <mat-label>Gastos de administracion</mat-label>
-      <mat-form-field class="form-group">
-        <input
-          matInput
-          [(ngModel)]="gastosAdministracion"
-          class="form-group-input"
-        />
-      </mat-form-field>
-
-      <mat-label>Otros costos finales</mat-label>
-      <mat-form-field class="form-group">
-        <input
-          matInput
-          [(ngModel)]="otrosCostosFinales"
-          class="form-group-input"
-        />
-      </mat-form-field>
-
-      <div class="align-button">
-        <button mat-raised-button class="next-button" (click)="prevStep()">
-          Volver
-        </button>
-        <button mat-raised-button class="next-button" (click)="nextStep()">
-          Siguiente
-        </button>
-      </div>
-    </div>
-  </mat-card>
+  </div>
 </div>

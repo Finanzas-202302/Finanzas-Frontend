@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogResultsComponent } from '../dialog-results/dialog-results.component';
 
 export interface DatosUsuario {
   nombre: string;
@@ -37,6 +39,7 @@ const DATOS: DatosUsuario[] = [
   styleUrls: ['./clients.component.css'],
 })
 export class ClientsComponent {
+  private dialog!: MatDialog;
   displayedColumns: string[] = [
     'nombre',
     'apellido',
@@ -48,7 +51,16 @@ export class ClientsComponent {
   dataSource = DATOS;
 
   verRegistro(element: DatosUsuario) {
-    // Lógica para ver el registro
+    const dialogRef = this.dialog.open(DialogResultsComponent, {
+      width: '80%', // especifica el ancho del diálogo
+      height: '80%', // especifica la altura del diálogo
+    });
+
+    // Puedes suscribirte a eventos del cuadro de diálogo si es necesario
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('Cuadro de diálogo cerrado', result);
+    });
+
     console.log('Ver', element);
   }
 

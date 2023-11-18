@@ -1,116 +1,132 @@
-<div class="calculate_3">
-  <mat-card-title class="header">Resumen</mat-card-title>
-  <mat-card class="container">
-    <div class="left-section">
-      <div class="title">
-        <h2>Resumen de datos ingresados</h2>
-      </div>
-      <div class="item">
-        <mat-label class="header">Cliente:</mat-label>
-        <p>{{ data.searchClient }}</p>
-      </div>
+<div class="container_principal">
+  <div class="sidebar_principal">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="content_principal">
+    <app-header-toolbar></app-header-toolbar>
+    <div class="content-inner_principal">
+      <section>
+        <div class="calculate_3">
+          <mat-card-title class="header">Confirme los datos</mat-card-title>
+          <mat-card class="container">
+            <div class="left-section">
+              <div class="title">
+                <h2 class="urbanist">Resumen de datos ingresados</h2>
+              </div>
+              <div class="item">
+                <mat-label class="header">Cliente:</mat-label>
+                <p>{{ data.searchClient }}</p>
+              </div>
 
-      <div class="item">
-        <mat-label class="header">Moneda:</mat-label>
-        <p>{{ data.selectedCurrency }}</p>
-      </div>
+              <div class="item">
+                <mat-label class="header">Moneda:</mat-label>
+                <p>{{ data.selectedCurrency }}</p>
+              </div>
 
-      <div class="item">
-        <mat-label class="header">Valor del vehículo:</mat-label>
-        <p>{{ data.vehicleValue }}</p>
-      </div>
+              <div class="item">
+                <mat-label class="header">Valor del vehículo:</mat-label>
+                <p>{{ data.vehicleValue }}</p>
+              </div>
 
-      <div class="item">
-        <mat-label class="header">Pie mínimo inicial:</mat-label>
-        <p>{{ data.electedInitialPie }}%</p>
-      </div>
+              <div class="item">
+                <mat-label class="header">Pie mínimo inicial:</mat-label>
+                <p>{{ data.electedInitialPie }}%</p>
+              </div>
 
-      <div class="item">
-        <mat-label class="header">Porcentaje del crédito:</mat-label>
-        <p>{{ data.selectedCredit }}%</p>
-      </div>
+              <div class="item">
+                <mat-label class="header">Porcentaje del crédito:</mat-label>
+                <p>{{ data.selectedCredit }}%</p>
+              </div>
 
-      <div class="item">
-        <mat-label class="header">Porcentaje de VFMG:</mat-label>
-        <p>{{ data.selectedVFMG }}%</p>
-      </div>
+              <div class="item">
+                <mat-label class="header">Porcentaje de VFMG:</mat-label>
+                <p>{{ data.selectedVFMG }}%</p>
+              </div>
 
-      <div class="item">
-        <mat-label class="header">Plazo del préstamo:</mat-label>
-        <p>{{ data.selectedLoanTerm }} meses</p>
-      </div>
+              <div class="item">
+                <mat-label class="header">Plazo del préstamo:</mat-label>
+                <p>{{ data.selectedLoanTerm }} meses</p>
+              </div>
 
-      <div class="item">
-        <mat-label class="header">Tipo de tasa de interés:</mat-label>
-        <p>{{ data.selectedInterestRateType }}</p>
-      </div>
+              <div class="item">
+                <mat-label class="header">Tipo de tasa de interés:</mat-label>
+                <p>{{ data.selectedInterestRateType }}</p>
+              </div>
 
-      <div class="item">
-        <mat-label class="header">Tasa de interés:</mat-label>
-        <p>{{ data.interestRate }}%</p>
-      </div>
+              <div class="item">
+                <mat-label class="header">Tasa de interés:</mat-label>
+                <p>{{ data.interestRate }}%</p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="right-section">
+              <div class="item">
+                <mat-label>Tipo de periodo de gracia:</mat-label>
+                <p>{{ data.periodoGraciaTipo }}</p>
+              </div>
+
+              <div class="item">
+                <mat-label>Periodo de gracia en meses:</mat-label>
+                <p>{{ data.periodoGraciaMeses }}</p>
+              </div>
+
+              <div class="item">
+                <mat-label>Seguro de desgravamen:</mat-label>
+                <p>{{ data.seguroDesgravamen }}%</p>
+              </div>
+
+              <div class="item">
+                <mat-label>Tipo de tasa del seguro desgravamen:</mat-label>
+                <p>{{ data.seguroDesgravamenTipo }}</p>
+              </div>
+
+              <div class="item">
+                <mat-label>COK mensual:</mat-label>
+                <p>{{ data.cok }}%</p>
+              </div>
+
+              <div class="item">
+                <mat-label>Costos y gastos iniciales:</mat-label>
+                <p>{{ data.gastosNotarialesRegistrales }}</p>
+              </div>
+              <div class="item">
+                <mat-label>Otros costos iniciales:</mat-label>
+                <p>{{ data.otrosCostosIniciales }}</p>
+              </div>
+
+              <h3 id="sub">Costos y gastos periódicos</h3>
+
+              <div class="item">
+                <mat-label>Portes:</mat-label>
+                <p>{{ data.costosGastosPeriodicos }}</p>
+              </div>
+              <div class="item">
+                <mat-label>Gastos de administración:</mat-label>
+                <p>{{ data.gastosAdministracion }}</p>
+              </div>
+              <div class="item">
+                <mat-label>Otros costos finales:</mat-label>
+                <p>{{ data.otrosCostosFinales }}</p>
+              </div>
+
+              <div class="align-button">
+                <button mat-raised-button class="a-button" (click)="prevStep()">
+                  Volver
+                </button>
+                <button
+                  mat-raised-button
+                  class="c-button"
+                  (click)="calculate()"
+                >
+                  Calcular
+                </button>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </section>
     </div>
-
-    <div class="divider"></div>
-
-    <div class="right-section">
-      <div class="item">
-        <mat-label>Tipo de periodo de gracia:</mat-label>
-        <p>{{ data.periodoGraciaTipo }}</p>
-      </div>
-
-      <div class="item">
-        <mat-label>Periodo de gracia en meses:</mat-label>
-        <p>{{ data.periodoGraciaMeses }}</p>
-      </div>
-
-      <div class="item">
-        <mat-label>Seguro de desgravamen:</mat-label>
-        <p>{{ data.seguroDesgravamen }}%</p>
-      </div>
-
-      <div class="item">
-        <mat-label>Tipo de tasa del seguro desgravamen:</mat-label>
-        <p>{{ data.seguroDesgravamenTipo }}</p>
-      </div>
-
-      <div class="item">
-        <mat-label>COK mensual:</mat-label>
-        <p>{{ data.cok }}%</p>
-      </div>
-
-      <div class="item">
-        <mat-label>Costos y gastos iniciales:</mat-label>
-        <p>{{ data.gastosNotarialesRegistrales }}</p>
-      </div>
-      <div class="item">
-        <mat-label>Otros costos iniciales:</mat-label>
-        <p>{{ data.otrosCostosIniciales }}</p>
-      </div>
-
-      <h3 id="sub">Costos y gastos periódicos</h3>
-
-      <div class="item">
-        <mat-label>Portes:</mat-label>
-        <p>{{ data.costosGastosPeriodicos }}</p>
-      </div>
-      <div class="item">
-        <mat-label>Gastos de administración:</mat-label>
-        <p>{{ data.gastosAdministracion }}</p>
-      </div>
-      <div class="item">
-        <mat-label>Otros costos finales:</mat-label>
-        <p>{{ data.otrosCostosFinales }}</p>
-      </div>
-
-      <div class="align-button">
-        <button mat-raised-button class="a-button" (click)="prevStep()">
-          Volver
-        </button>
-        <button mat-raised-button class="c-button" (click)="calculate()">
-          Calcular
-        </button>
-      </div>
-    </div>
-  </mat-card>
+  </div>
 </div>

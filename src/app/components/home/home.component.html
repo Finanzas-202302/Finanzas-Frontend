@@ -1,11 +1,13 @@
-<div class="container">
-  <div class="sidebar">
+<div class="container_principal">
+  <div class="sidebar_principal">
     <app-sidebar></app-sidebar>
   </div>
-  <div class="content">
+  <div class="content_principal">
     <app-header-toolbar></app-header-toolbar>
-    <div class="content-inner">
-      <section></section>
+    <div class="content-inner_principal">
+      <section>
+        <router-outlet></router-outlet>
+      </section>
     </div>
   </div>
 </div>

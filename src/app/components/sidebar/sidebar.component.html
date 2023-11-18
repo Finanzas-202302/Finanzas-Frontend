@@ -9,11 +9,19 @@
         <mat-icon class="sidebar-icon">insert_chart</mat-icon>
         <span>Resumen</span>
       </mat-list-item>
-      <mat-list-item class="option" (click)="selectOption('C')">
+      <mat-list-item
+        class="option"
+        (click)="selectOption('C')"
+        routerLink="/calculate"
+      >
         <mat-icon class="sidebar-icon">calculate</mat-icon>
         <span>Calcular crédito</span>
       </mat-list-item>
-      <mat-list-item class="option" (click)="selectOption('U')">
+      <mat-list-item
+        class="option"
+        (click)="selectOption('U')"
+        routerLink="/clients"
+      >
         <mat-icon class="sidebar-icon">person</mat-icon>
         <span>Mis clientes</span>
       </mat-list-item>

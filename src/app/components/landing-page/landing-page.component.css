@@ -93,11 +93,13 @@ mat-grid-tile {
   font-size: 64px;
 }
 
+
 .vertical-align-center p{
   color: #808080;
   font-weight: 300;
   font-size: 16px;
 }
+
 .empecemos-button {
   color: white;
   background-color: #FF450D;
@@ -222,6 +224,7 @@ mat-grid-tile {
 }
 .subscribe mat-grid-tile{
   background-color: #1A0E00;
+  
 }
 .subscribe .izquierda p{
   color: #FF450D;
@@ -256,7 +259,7 @@ input {
   margin-bottom: 10px;
 }
 
-button {
+.enviar-button {
   padding: 10px 20px;
   background-color: #FF450D;
   border: none;
@@ -265,8 +268,35 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.enviar-button:hover {
   background-color: #ff7c00;
 }
+
+.footer{
+  background-color: #FF450D;
+}
+.footer mat-grid-tile{
+  background-color: #FF450D;
+}
+
+.footer p{
+  color: white;
+}
+.footer img{
+  margin-bottom: 30px;
+}
+.rights{
+  background-color: white;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.rights p{
+  color: #1A1A1A;
+  text-align: center;
+}
+
+
 
 

@@ -13,11 +13,11 @@ header img {
 }
 
 .login-container {
-  background-color: rgb(255, 230, 209);
+  background-color: #FFF3E5;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 880px;
 }
 
 .login-box {

@@ -10,6 +10,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HeaderToolbarComponent } from './components/header-toolbar/header-toolbar.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },

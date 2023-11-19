@@ -1,30 +1,17 @@
-<section id="header-toolbar" *ngIf="showHeader">
-  <div class="header-info">
-    <div class="header-title">{{ selectedOption }}</div>
-    <div class="header-description">{{ description }}</div>
+<div class="header">
+  <div>
+      <h1>Calcular crédito vehicular</h1>
+      <p>Calcule el crédito vehicular de su cliente en línea aquí</p>
   </div>
-  <div class="header-icons">
-    <mat-icon class="icon-message">mail</mat-icon>
-    <mat-icon class="icon-notification">notifications</mat-icon>
-    <mat-icon class="icon-circle">account_circle</mat-icon>
-    <div class="user-info">
-      <div class="user-name">Sofia</div>
-      <div class="user-role">Admin account</div>
-    </div>
+  <div class="user-info">
+      <div class="icons">
+          <i class="far fa-envelope"></i>
+          <i class="far fa-bell"></i>
+      </div>
+      <div>
+          <img src="../../../assets/images/totoro.jpg" alt="User Avatar">
+          <p>Nombre de Usuario</p>  
+          <p>Admin account</p>
+      </div>
   </div>
-</section>
-
-<!--
-    <section id="content">
-      <div
-        style="
-          width: 1129px;
-          height: 837px;
-          left: 289px;
-          top: 162px;
-          position: absolute;
-          background: #fafafa;
-          border-radius: 20px;
-        "
-      ></div>
-    </section>-->
+</div>

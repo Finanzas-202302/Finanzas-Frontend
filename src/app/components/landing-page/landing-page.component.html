@@ -1,1 +1,213 @@
-<p>landing-page works!</p>
+<header class="header">
+  <div class="logo-container">
+    <img src="../../../assets/images/smartdrive-logo.png" alt="Logo de la empresa">
+  </div>
+
+  <nav class="navigation">
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#global">Global</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <div class="user-actions">
+    <a href="/login"><button class="ghost-button">Ingresa</button></a>
+    <a href="/register"><button class="primary-button" href="/register">Registrate</button></a>
+  </div>
+</header>
+
+<section class="home" id="home">
+<mat-grid-list cols="2" rowHeight="700px">
+    <mat-grid-tile>
+      <img src="../../../assets/images/home-frame.png" alt="Home image">
+    </mat-grid-tile>
+    <mat-grid-tile layout-align="center center">
+      <div class="vertical-align-center">
+        <h1>Gestionar planes de <br>pago nunca ha sido tan <br>fácil</h1>
+        <p>El plan de pagos se refiere a una estructura detallada que muestra cómo se <br>realizarán los pagos a lo largo del tiempo para amortizar un préstamo.</p>
+        <a href="/login"><button class="empecemos-button">Empecemos!</button></a>
+        <p>Registrado y supervisado por:</p>
+        <img src="../../../assets/images/superintendencia.png">
+      </div>
+    </mat-grid-tile>
+</mat-grid-list>
+</section>
+<section class="servicios" id="servicios">
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="vertical-align-center">
+        <p>¿Por qué elegirnos?</p>
+        <h1>Somos un equipo<br>de entusiastas</h1>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="vertical-align-center">
+        <p>Nuestra suite tecnológica está diseñada para satisfacer diversas necesidade<br>
+          empresariales según la demanda. Nuestra cultura comunal, excelencia en<br>
+          rendimiento y tecnología de nube privada allanan el camino para brindar un<br>
+          soporte al cliente sin precedentes.</p>
+          <a href="/login"><button class="empecemos-button">Explorar</button></a>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="3" rowHeight="500px">
+    <mat-grid-tile>
+      <div class="card">
+        <img src="../../../assets/images/van-tir.png" alt="VAN y TIR">
+        <div class="content">
+          <h2>VAN y TIR transparentes</h2>
+          <p>Obtén transparencia total con cálculos<br>
+            detallados del Valor Actual Neto (VAN) y la<br>
+            Tasa Interna de Retorno (TIR). Cumple con<br>
+            los estándares de transparencia del<br>
+            Sistema Financiero Peruano.</p>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="card">
+        <img src="../../../assets/images/planificacion-de-pagos.png" alt="VAN y TIR">
+        <div class="content">
+          <h2>Planificación de pagos<br>inteligente</h2>
+          <p>Crea planes de pagos personalizados para<br>
+            préstamos vehiculares. Ajusta la moneda,<br>
+            tipo de tasa de interés y plazos de gracia<br>
+            para adaptarse a tus necesidades<br>
+            financieras</p>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="card">
+        <img src="../../../assets/images/acceso-seguro.png" alt="VAN y TIR">
+        <div class="content">
+          <h2>Acceso Seguro 24/7</h2>
+          <p>Garantiza la seguridad de tus datos<br>
+            financieros con un inicio de sesión seguro.<br>
+            Accede a tu información en cualquier<br>
+            momento y desde cualquier lugar para<br>
+            mantener el control de tus finanzas<br>
+            vehiculares.</p>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>
+<section class="global" id="global">
+  <mat-grid-list cols="1" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="vertical-align-center global_div">
+        <p>Somos globales</p>
+        <h1>Escala y adapta al ritmo de tu negocio</h1>
+        <h6>Descubre una herramienta financiera que te permite escalar y adaptar tu plan de pagos vehicular al ritmo dinámico de tu negocio.</h6>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="2" rowHeight="500px">
+    <mat-grid-tile layout-align="center center">
+      <div class="vertical-align-center numeros_div">
+      <h1>70,000 +</h1>
+      <p>Trabajadores</p>
+      <h1>30 +</h1>
+      <p>Países</p>
+      <h1>80 +</h1>
+      <p>Centros de contacto</p>
+    </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="../../../assets/images/globales.png" height="400px">
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>
+<section class="nosotros" id="nosotros">
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile class="titulo">
+      <div class="vertical-align-center">
+        <p>Lo que hacemos</p>
+        <h1>La transformación de la<br>experiencia del cliente<br>comienza aquí.</h1>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="descripcion">
+      <div class="vertical-align-center">
+        <p>Descubre una aplicación diseñada para revolucionar la forma en que<br>
+          experimentas el servicio al cliente. Desde la personalización de planes de pagos<br>
+          hasta la transparencia financiera total, nuestra aplicación es el punto de partida<br>
+          para transformar la experiencia del cliente en el ámbito financiero. ¡Da inicio<br>
+          a una nueva era de relaciones financieras con nosotros!</p>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="2" rowHeight="500px" class="aprende_mas">
+    <mat-grid-tile>
+      <div class="vertical-align-center">
+      <img src="../../../assets/images/Frame.png">
+      <h1>Crecimiento de los ingresos</h1>
+      <p>Estrategias de crecimiento desde la adquisición hasta la conversión</p>
+      <a href="#">Aprende más</a>
+    </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="vertical-align-center">
+      <img src="../../../assets/images/Frame (1).png">
+      <h1>Cuidado del cliente</h1>
+      <p>Embajadores de marca que atiendes a clientes en todos los canales</p>
+      <a href="#">Aprende más</a>
+    </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="vertical-align-center">
+      <img src="../../../assets/images/Frame (2).png">
+      <h1>Retención de clientes</h1>
+      <p>Compromiso basado en datos que genera lealtad y recupera ingresos</p>
+      <a href="#">Aprende más</a>
+    </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="vertical-align-center">
+      <img src="../../../assets/images/Frame (3).png">
+      <h1>Soporte técnico</h1>
+      <p>El soporte técnico experto maneja los problemas cada vez más complejos</p>
+      <a href="#">Aprende más</a>
+    </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>
+<section class="subscribe">
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile class="izquierda">
+      <div class="vertical-align-center">
+        <p>Suscríbete</p>
+        <h1>Mantente informado,<br>
+        ¡nunca te pierdas una<br>
+      actualización!</h1>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="derecha">
+      <div class="vertical-align-center">
+        <p>Una vez al mes te enviaremos episodios recientes de nuestro boletín<br>
+          financiero que cubre la optimización de
+          tecnología digital y personas<br>irresistibles que ofrecen una gran
+          experiencia del cliente que impacta en el<br>resultado final.</p>
+          <form>
+            <div class="form-group">
+              <label for="email">Ingresa tu correo:</label>
+              <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+            </div>
+        
+            <button type="submit">Enviar</button>
+          </form>   
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>
+  <mat-grid-list cols="4" rowHeight="300px">
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list>
+  <div>
+    <p>Copyright SmartDrive 2023. All Rights Reserved.</p>
+  </div>

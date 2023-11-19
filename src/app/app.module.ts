@@ -18,7 +18,6 @@ import { CalculateviewComponent } from './components/calculateview/calculateview
 import { ClientsComponent } from './components/clients/clients.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderToolbarComponent } from './components/header-toolbar/header-toolbar.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
@@ -33,7 +32,6 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
     ClientsComponent,
     ProfileComponent,
     NotfoundComponent,
-    SidebarComponent,
     HeaderToolbarComponent,
     LandingPageComponent,
   ],

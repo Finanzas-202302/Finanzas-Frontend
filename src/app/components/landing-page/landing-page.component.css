@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;700&family=Urbanist:wght@300;700&display=swap');
+
+*{
+  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FAFAFA;
+  color: #4D4D4D;
+  height: 66px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 40px; /* Ajusta el tamaño del logo según tus necesidades */
+  margin-right: 10px;
+}
+
+.navigation {
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #4D4D4D;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.navigation a:hover{
+  color: #FF450D;
+  font-weight: 700;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-actions button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ghost-button {
+  color: #FF450D;
+  background-color: transparent;
+  border: 2px solid #FF450D;
+  border-radius: 8px;
+  width: 130px;
+}
+
+.primary-button {
+  color: white;
+  background-color: #FF450D;
+  border: none;
+  border-radius: 8px;
+  width: 130px;
+}
+
+mat-grid-tile {
+  background: #FFF3E5;
+}
+
+.vertical-align-center h1{
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  line-height: 70px;
+  font-size: 64px;
+}
+
+.vertical-align-center p{
+  color: #808080;
+  font-weight: 300;
+  font-size: 16px;
+}
+.empecemos-button {
+  color: white;
+  background-color: #FF450D;
+  border: none;
+  border-radius: 8px;
+  height: 50px;
+  width: 240px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.servicios mat-grid-tile{
+  background-color: #FAFAFA;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 3px solid #FB8600;
+  border-top: none;
+  border-left: none;
+  border-right: none; /* Para quitar el borde en la parte inferior */
+  padding: 40px;
+  height: 300px;
+}
+
+.card img {
+  width: 130px; /* Ajusta el ancho de la imagen al 100% de la card */
+}
+
+.card .content {
+  text-align: center;
+}
+
+.card h2 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: #555555;
+}
+
+.global mat-grid-tile{
+  background-color: #FFF3E5;
+}
+
+.global .global_div{
+  margin-right: 100px;
+}
+
+.global .global_div p{
+  color: #FF450D;
+  font-size: 24px;
+  font-weight: 700;
+}
+.global .global_div h1{
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.global .global_div h6{
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #808080;
+}
+.global .numeros_div p{
+  color: #FF450D;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.global .numeros_div h1{
+  font-size: 64px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+}
+.nosotros mat-grid-tile{
+  background-color: #FAFAFA;
+}
+.nosotros .titulo p{
+  color: #FF450D;
+  font-weight: 700;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 24px;
+  margin-top: 80px;
+}
+.nosotros .descripcion p{
+  color: #808080;
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 80px;
+  line-height: 28px;
+}
+.nosotros .aprende_mas h1{
+  font-size: 32px;
+}
+.nosotros .aprende_mas img{
+  height: 200px;
+}
+.nosotros .aprende_mas p{
+  color: #808080;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.nosotros .aprende_mas a{
+  color: #FF450D;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 90px;
+}
+.subscribe{
+  background-color: #1A0E00;
+}
+.subscribe mat-grid-tile{
+  background-color: #1A0E00;
+}
+.subscribe .izquierda p{
+  color: #FF450D;
+}
+.subscribe .izquierda h1{
+  color: #FFEBE5;
+}
+.subscribe .derecha p{
+  color: #F2F2F2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+  padding: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #FF450D;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FF450D;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff7c00;
+}
+
+

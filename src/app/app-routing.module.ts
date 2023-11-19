@@ -12,7 +12,7 @@ import { HeaderToolbarComponent } from './components/header-toolbar/header-toolb
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'landing', pathMatch: 'full' },
+  { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
   { path: 'landing-page', component: LandingPageComponent},
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },

@@ -7,6 +7,6 @@ export interface ClientModule {
   email: string;
   dni: number;
   vehicle: string;
-  credits: CreditModule;
+  credits?: CreditModule;
   userId: number; 
 }

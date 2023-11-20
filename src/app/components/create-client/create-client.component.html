@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Nuevo Cliente</h2>
+<div mat-dialog-content>
+  <form>
+    <mat-form-field>
+      <input matInput name="firstname" placeholder="Nombre" [(ngModel)]="newClient.firstname" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput name="lastname" placeholder="Apellido" [(ngModel)]="newClient.lastname" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput name="dni" placeholder="DNI" [(ngModel)]="newClient.dni" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput name="email" placeholder="Email" [(ngModel)]="newClient.email" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput name="vehicle" placeholder="Vehículo" [(ngModel)]="newClient.vehicle" required>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancelClick()">Cancelar</button>
+  <button mat-button color="primary" (click)="onSaveClick()" [disabled]="!isFormValid()">Guardar</button>
+</div>

@@ -54,7 +54,8 @@ export class ClientService {
   createItem(client: ClientModule): Observable<ClientModule> {
     const httpOptions = this.getHttpOptions();
     return this.http
-      .post<ClientModule>(this.base_Url, client, httpOptions)
+      .post<ClientModule>(`${this.base_Url}/register`, client, httpOptions)
       .pipe(catchError(this.handleError));
   }
+  //create item with json, validate the data: firstname, lastname, email, dni, vehicle, userId
 }

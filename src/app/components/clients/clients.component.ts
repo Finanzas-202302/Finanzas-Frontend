@@ -2,8 +2,12 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatDialog } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
+
 import { ClientService } from 'src/app/services/client.service';
 import { ClientModule } from 'src/app/models/client.module';
+import { CreateClientComponent } from '../create-client/create-client.component';
 
 @Component({
   selector: 'app-clients',
@@ -17,7 +21,7 @@ export class ClientsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor(private clientService: ClientService) {
+  constructor(private clientService: ClientService, private dialog: MatDialog) {
     this.dataSource = new MatTableDataSource();
   }
 
@@ -67,6 +71,16 @@ export class ClientsComponent implements OnInit {
       }
     );
     console.log(`Eliminar cliente con ID: ${clientId}`);
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(CreateClientComponent, {
+      width: '400px',
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('The dialog was closed');
+    });
   }
 }
 

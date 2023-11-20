@@ -43,8 +43,11 @@ export class CalculateviewComponent implements OnInit{
       this.filteredClients = this.clientControl.valueChanges.pipe(
         startWith(''),
         map((value) => this._filterUsers(value))
-      );
+      ); 
+      console.log("clients");
+      console.log(this.clients);
     });
+    console.log("filter users");console.log(this.filteredClients);
   }
 
   private _filterUsers(value: string): any[] {

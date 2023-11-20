@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
-import { catchError, Observable, retry, throwError } from 'rxjs';
+import { catchError, map, Observable, retry, throwError } from 'rxjs';
 import { ClientModule } from '../models/client.module';
 import { TokenService } from './token.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ClientService {
-  base_Url = 'https://finanzas-api.azurewebsites.net/api/bank/v1/clients';
+export class ResultService {
+  base_Url = 'https://finanzas-api.azurewebsites.net/api/bank/v1/calculate-debt';
   httpOptions = this.getHttpOptions(); // Agregar la propiedad httpOptions
 
   constructor(private http: HttpClient, private tokenService: TokenService) {}
@@ -50,11 +50,5 @@ export class ClientService {
     return this.http
       .delete<ClientModule>(`${this.base_Url}/${id}`, httpOptions)
       .pipe(retry(2), catchError(this.handleError));
-  }
-  createItem(client: ClientModule): Observable<ClientModule> {
-    const httpOptions = this.getHttpOptions();
-    return this.http
-      .post<ClientModule>(this.base_Url, client, httpOptions)
-      .pipe(catchError(this.handleError));
   }
 }

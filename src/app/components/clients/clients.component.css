@@ -1,16 +1,35 @@
-table {
-    width: 100%;
-  }
-  
-  .mat-mdc-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
-  
-  td, th {
-    width: 25%;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;700&family=Urbanist:wght@300;700&display=swap');
 
-mat-form-field {
-    margin-top: 30px;
+*{
+  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  height: 50vh; /* Ajusta la altura según tus necesidades */
+}
+
+.filter-field {
+  width: 200px; /* ajusta el ancho del filtro según tu preferencia */
+  margin-right: 16px;
+}
+.orange-btn {
+  background-color: #FF6333;
+  color: white;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.tabla{
+  width: 1400px;
+}
+button {
+  margin-top: 8px; /* espacio entre el botón Añadir Cliente y la tabla */
+}
+button mat-icon{
+  font-size: 14px;
 }

@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>Añadir Cliente</h1>
+<div mat-dialog-content>
+  <form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <input matInput formControlName="firstname" placeholder="Nombre" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="lastname" placeholder="Apellido" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="email" placeholder="Correo" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="dni" placeholder="DNI" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="vehicle" placeholder="Vehículo" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="userId" placeholder="User ID" required>
+    </mat-form-field>
+    <div class="dialog-buttons">
+      <button mat-raised-button color="primary" type="submit" [disabled]="clientForm.invalid">Guardar</button>
+      <button mat-button mat-dialog-close>Cancelar</button>
+    </div>
+  </form>
+</div>

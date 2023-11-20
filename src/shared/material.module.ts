@@ -12,7 +12,9 @@ import { MatChipsModule } from "@angular/material/chips";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 import { MatToolbarModule } from "@angular/material/toolbar";
+import {MatRadioModule} from '@angular/material/radio';
 import {NgIf} from '@angular/common';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [],
@@ -25,6 +27,8 @@ import {NgIf} from '@angular/common';
     MatPaginatorModule,
     MatSortModule,
     MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
     MatFormFieldModule,
     MatChipsModule,
     MatGridListModule,
@@ -43,7 +47,9 @@ import {NgIf} from '@angular/common';
     MatPaginatorModule,
     MatSortModule,
     MatInputModule,
+    MatSelectModule,
     MatFormFieldModule,
+    MatRadioModule,
     MatChipsModule,
     MatGridListModule,
     MatCardModule,

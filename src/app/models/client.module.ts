@@ -1,4 +1,4 @@
-import { Credit } from "./credit.module";
+import { CreditModule } from "./credit.module";
 
 export interface ClientModule {
   id: number;
@@ -7,5 +7,6 @@ export interface ClientModule {
   email: string;
   dni: number;
   vehicle: string;
-  credits: Credit[];
+  credits: CreditModule;
+  userId: number; 
 }

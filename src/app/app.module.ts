@@ -8,7 +8,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatDialog } from '@angular/material/dialog';
 import { MaterialModule } from 'src/shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
@@ -21,6 +21,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { AddClientDialogComponent } from './components/add-client-dialog/add-client-dialog.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     NotfoundComponent,
     LandingPageComponent,
     ToolbarComponent,
+    AddClientDialogComponent,
   ],
   imports: [
     BrowserModule,

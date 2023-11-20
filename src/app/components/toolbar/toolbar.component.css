@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;700&family=Urbanist:wght@300;700&display=swap');
+
+*{
+  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FAFAFA;
+  color: #4D4D4D;
+  height: 66px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 40px; /* Ajusta el tamaño del logo según tus necesidades */
+  margin-right: 10px;
+}
+
+.navigation {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #4D4D4D;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.navigation a:hover{
+  color: #FF450D;
+  font-weight: 700;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-actions button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ghost-button {
+  color: #FF450D;
+  background-color: transparent;
+  border: 2px solid #FF450D;
+  border-radius: 8px;
+  width: 150px;
+}

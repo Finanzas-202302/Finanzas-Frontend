@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatSelectModule} from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,9 +19,8 @@ import { CalculateviewComponent } from './components/calculateview/calculateview
 import { ClientsComponent } from './components/clients/clients.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
-import { HeaderToolbarComponent } from './components/header-toolbar/header-toolbar.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +33,8 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     ClientsComponent,
     ProfileComponent,
     NotfoundComponent,
-    HeaderToolbarComponent,
     LandingPageComponent,
-    SidenavComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +44,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     HttpClientModule,
     MatListModule,
     MatIconModule,
+    MatSelectModule,
     MatSidenavModule,
   ],
   providers: [],

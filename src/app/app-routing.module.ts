@@ -8,9 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
-import { HeaderToolbarComponent } from './components/header-toolbar/header-toolbar.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
@@ -22,7 +20,6 @@ const routes: Routes = [
   { path: 'calculate', component: CalculateviewComponent },
   { path: 'clients', component: ClientsComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'header', component: HeaderToolbarComponent },
   { path: '**', component: NotfoundComponent },
 ];
 

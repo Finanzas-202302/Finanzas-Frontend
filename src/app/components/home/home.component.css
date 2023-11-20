@@ -5,16 +5,3 @@
   font-family: 'Urbanist', sans-serif;
   background-color: #FFF3E5;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 4fr; /* Dos columnas, la primera ocupa 1 fracción, la segunda 2 fracciones */
-  grid-template-rows: repeat(2, 1fr); /* Dos filas, cada una ocupa 1 fracción */
-  height: 100vh; /* Altura del 100% de la ventana */
-}
-
-
-.column2 {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr); /* Dos filas en la segunda columna, cada una ocupa 1 fracción */
-}
